@@ -1,16 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('myForm');
-    const input = document.getElementById('firstName');
-    const container = input.closest('.floating-input');
 
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        if (input.value.trim() === '') {
-            container.classList.add('error');
-        } else {
-            container.classList.remove('error');
-            alert("Form submitted successfully!");
+        let isValid = true;
+
+        // Get all inputs and selects inside the form
+        const fields = form.querySelectorAll('input[required], select');
+
+        fields.forEach((field) => {
+            const container = field.closest('.floating-input');
+
+            if (!field.value.trim()) {
+                container.classList.add('error');
+                isValid = false;
+            } else {
+                container.classList.remove('error');
+            }
+        });
+
+        if (isValid) {
+            alert('Form submitted successfully!');
         }
     });
 });
@@ -44,17 +55,17 @@ dots.forEach((dot, i) => {
     });
 });
 
-const playButton = document.getElementById('playButton');
-const videoPopup = document.getElementById('videoPopup');
-const closeButton = document.getElementById('closeButton');
+const playBtn = document.getElementById("playButton");
+const popup = document.getElementById("videoPopup");
+const closeBtn = document.getElementById("closeButton");
 
-playButton.addEventListener('click', function () {
-    videoPopup.style.display = 'flex';
+playBtn.addEventListener("click", () => {
+    popup.style.display = "flex";
 });
 
-closeButton.addEventListener('click', function () {
-    videoPopup.style.display = 'none';
-    const video = videoPopup.querySelector('video');
+closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+    const video = popup.querySelector("video");
     video.pause();
     video.currentTime = 0;
 });

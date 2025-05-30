@@ -45,6 +45,7 @@
                   <label for="firstName">First Name</label>
                   <div class="error-tooltip">
                     This field can’t be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
                   </div>
                 </div>
                 <div class="floating-input">
@@ -52,6 +53,7 @@
                   <label for="lastName">Last Name</label>
                   <div class="error-tooltip">
                     This field can’t be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
                   </div>
                 </div>
               </div>
@@ -61,6 +63,7 @@
                   <label for="email">Business Email</label>
                   <div class="error-tooltip">
                     This field can’t be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
                   </div>
                 </div>
                 <div class="floating-input">
@@ -68,10 +71,11 @@
                   <label for="company">Company</label>
                   <div class="error-tooltip">
                     This field can’t be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
                   </div>
                 </div>
               </div>
-              <div class="input-row full">
+              <div class="floating-input full">
                 <select>
                   <option value="">Country</option>
                 </select>
@@ -131,7 +135,10 @@
             <a href="#" class="secondary-cta">92% Success Rate →</a>
           </div>
         </div>
-
+      </div>
+    </section>
+    <div class="we-organize">
+      <div class="container">
         <div class="testimonial-slider">
           <div class="arrow-left arrows">&#10094;</div>
           <div class="arrow-right arrows">&#10095;</div>
@@ -177,17 +184,12 @@
             </div>
           </div>
 
-          <!-- Dots -->
           <div class="dots">
             <span class="dot active"></span>
             <span class="dot"></span>
             <span class="dot"></span>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="we-organize">
-      <div class="container">
         <div class="heading">
           <h2>
             <span class="hollow">WE</span>
@@ -237,51 +239,54 @@
       </div>
     </div>
     <div class="container">
-      <!-- Left Section -->
-      <div class="left-section">
-        <h1>WATCH THE VIDEO</h1>
-        <ul>
-          <li>
-            <span>✔</span>
-            <div>
-              <h2>Needs Assessment</h2>
-              <p>
-                The Advocacy Evaluation Toolkit contains the instruments used to
-                collect data for evaluating the Consumer Voices for Coverage
-                program.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span>✔</span>
-            <div>
-              <h2>Insurance Advocacy</h2>
-              <p>
-                We are committed to advocating for appropriate coverage and
-                payment policies.
-              </p>
-            </div>
-          </li>
-          <li>
-            <span>✔</span>
-            <div>
-              <h2>Treatment Planning & Placement</h2>
-              <p>
-                Patients can better understand medical procedures, discharge
-                instruction, etc.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- Right Section -->
-      <div class="right-section">
-        <div class="play-button" id="playButton"></div>
-        <div class="intervention-text">GET AN INTERVENTION</div>
+      <!-- Left & Right Section -->
+      <div class="watch-video">
+        <div class="left-section">
+          <h1>WATCH THE VIDEO</h1>
+          <ul>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Needs Assessment</h2>
+                <p>
+                  The Advocacy Evaluation Toolkit contains the instruments used
+                  to collect data for evaluating the Consumer Voices for
+                  Coverage program.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Insurance Advocacy</h2>
+                <p>
+                  We are committed to advocating for appropriate coverage and
+                  payment policies.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Treatment Planning & Placement</h2>
+                <p>
+                  Patients can better understand medical procedures, discharge
+                  instruction, etc.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <div class="play-button" id="playButton"></div>
+          <div class="intervention-text">
+            <img src="/assets/logo.png" alt="Logo" class="logo" />
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Popup with Video Player -->
+    <!-- Popup -->
     <div class="popup" id="videoPopup">
       <div class="popup-content">
         <button class="close-button" id="closeButton">&times;</button>
