@@ -12,6 +12,7 @@
 
     /* Typography */
     --font-family-primary: 'Montserrat', sans-serif;
+    --font-serif:sans-serif;
     --font-size-base: 16px;
     --font-size-small: 14px;
     --font-size-large: 18px;
@@ -800,64 +801,93 @@ button:hover {
     width: 100%;
   }
 }
-
-.cta-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
+ .cta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
 }
 
 .cta-box {
-  padding: 25px;
-  border: 2px solid #5bc8af;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
-  color: #1a1a1a;
-  position: relative;
-  transition: all 0.3s ease;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    border: 2px solid #5BC8AF;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #1A1A1A;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.cta-box.active {
-  color: #5bc8af;
-  position: relative;
+.cta-box span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.cta-box .info-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/info.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-box:hover .info-icon {
+    display: block;
+}
+
+.cta-box:hover { 
+    color: #5BC8AF; 
 }
 
 .cta-box .tooltip {
-  display: none;
-  position: absolute;
-  bottom: -94px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #297c6b;
-  color: #fff;
-  font-size: 13px;
-  padding: 12px;
-  border-radius: 8px;
-  max-width: 280px;
-  width: max-content;
-  z-index: 5;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  font-weight: 100;
+    display: none;
+    position: absolute;
+    bottom: -94px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #297C6B;
+    color: #fff;
+    font-size: 13px;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 280px;
+    width: max-content;
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    font-weight: 100;
 }
 
-.cta-box.active:hover .tooltip {
-  display: block;
+.cta-box:hover .tooltip {
+    display: block;
 }
 
 .tooltip-arrow {
-  position: absolute;
-  top: -9px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #1b5c53;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #297C6B;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .heading h2 {
@@ -919,6 +949,7 @@ button:hover {
 .white-stroke-text {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #ffffff;
+  font-family:  var(--font-serif);
 }
 
 .black-stroke-text {
