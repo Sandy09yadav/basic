@@ -929,6 +929,7 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 2rem 6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -990,7 +991,7 @@ button:hover {
 
 .left-section li p {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
 }
 
