@@ -4,10 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hero Section Replica</title>
+  <meta name="description" content="Get professional intervention services for older adults. We provide comprehensive care and support." />
+  <meta name="keywords" content="intervention, elderly care, senior support, healthcare" />
+  <meta name="author" content="Get an Intervention Inc." />
+  <meta property="og:title" content="Get an Intervention - Professional Elderly Care Services" />
+  <meta property="og:description" content="Professional intervention services for older adults. Comprehensive care and support." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getanintervention.com" />
+  <meta property="og:image" content="./assets/logo.png" />
+  <title>Get an Intervention - Professional Elderly Care Services</title>
   <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="sachin.css" />
   <script src="script.js" defer></script>
+  <!-- Preload critical assets -->
+  <link rel="preload" href="./assets/background.png" as="image" />
+  <link rel="preload" href="./assets/logo.png" as="image" />
 </head>
 
 <body>
@@ -16,12 +27,13 @@
     <div class="container">
       <nav class="navbar">
         <img src="./assets/logo.png" alt="Logo" class="logo" />
-        
-        <!-- Mobile hamburger button -->
+
+     
+        <div class="navbar-inner-div">        <!-- Desktop navigation -->
+             <!-- Mobile hamburger button -->
         <button class="hamburger-btn" id="hamburgerBtn">
           <img src="./assets/hamburger.svg" alt="Menu" />
         </button>
-        <div class="navbar-inner-div">        <!-- Desktop navigation -->
         <ul class="nav-links">
           <li><a href="#" class="selected-nav">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -57,7 +69,7 @@
           </div>
         </div>
       </nav>
-      
+
       <div class="hero-content">
         <div class="text-section">
           <h1><span class="white-stroke-text">GET AN</span> <strong>INTERVENTION</strong></h1>
@@ -70,89 +82,89 @@
           </p>
         </div>
 
-          <div class="form-section">
-            <form id="myForm" novalidate>
-              <h2>Contact Us</h2>
-              <div class="input-row">
-                <div class="floating-input">
-                  <input type="text" id="firstName" placeholder=" " required />
-                  <label for="firstName">First Name</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-                <div class="floating-input">
-                  <input type="text" id="lastName" placeholder=" " required />
-                  <label for="lastName">Last Name</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="input-row">
-                <div class="floating-input">
-                  <input type="text" id="email" placeholder=" " required />
-                  <label for="email">Business Email</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-                <div class="floating-input">
-                  <input type="text" id="company" placeholder=" " required />
-                  <label for="company">Company</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="floating-input full">
-                <select id="country" required>
-                  <option value="" disabled selected hidden>Country</option>
-                  <option value="United States">United States</option>
-                  <option value="Canada">Canada</option>
-                  <option value="United Kingdom">United Kingdom</option>
-                  <option value="Australia">Australia</option>
-                  <option value="India">India</option>
-                  <option value="Germany">Germany</option>
-                  <option value="France">France</option>
-                  <option value="Italy">Italy</option>
-                  <option value="Spain">Spain</option>
-                  <option value="Brazil">Brazil</option>
-                  <option value="Mexico">Mexico</option>
-                  <option value="Russia">Russia</option>
-                  <option value="China">China</option>
-                  <option value="Japan">Japan</option>
-                  <option value="South Korea">South Korea</option>
-                  <option value="Netherlands">Netherlands</option>
-                  <option value="Sweden">Sweden</option>
-                  <option value="Norway">Norway</option>
-                  <option value="Switzerland">Switzerland</option>
-                  <option value="South Africa">South Africa</option>
-                  <option value="New Zealand">New Zealand</option>
-                  <option value="Singapore">Singapore</option>
-                  <option value="Malaysia">Malaysia</option>
-                  <option value="Indonesia">Indonesia</option>
-                  <option value="Thailand">Thailand</option>
-                  <option value="Philippines">Philippines</option>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Turkey">Turkey</option>
-                </select>
-                <label for="country">Country</label>
+        <div class="form-section">
+          <form id="myForm" novalidate>
+            <h2>Contact Us</h2>
+            <div class="input-row">
+              <div class="floating-input">
+                <input type="text" id="firstName" placeholder=" " required />
+                <label for="firstName">First Name</label>
                 <div class="error-tooltip">
                   This field can't be empty.<br />Please fill it in.
                   <div class="error-tooltip-arrow"></div>
                 </div>
               </div>
-              <button type="submit" class="primary-cta">Submit</button>
-            </form>
-          </div>
+              <div class="floating-input">
+                <input type="text" id="lastName" placeholder=" " required />
+                <label for="lastName">Last Name</label>
+                <div class="error-tooltip">
+                  This field can't be empty.<br />Please fill it in.
+                  <div class="error-tooltip-arrow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="floating-input">
+                <input type="text" id="email" placeholder=" " required />
+                <label for="email">Business Email</label>
+                <div class="error-tooltip">
+                  This field can't be empty.<br />Please fill it in.
+                  <div class="error-tooltip-arrow"></div>
+                </div>
+              </div>
+              <div class="floating-input">
+                <input type="text" id="company" placeholder=" " required />
+                <label for="company">Company</label>
+                <div class="error-tooltip">
+                  This field can't be empty.<br />Please fill it in.
+                  <div class="error-tooltip-arrow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-input full">
+              <select id="country" required>
+                <option value=""  selected hidden></option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="India">India</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Russia">Russia</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="South Africa">South Africa</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Turkey">Turkey</option>
+              </select>
+              <label for="country">Country</label>
+              <div class="error-tooltip">
+                This field can't be empty.<br />Please fill it in.
+                <div class="error-tooltip-arrow"></div>
+              </div>
+            </div>
+            <button type="submit" class="primary-cta">Submit</button>
+          </form>
         </div>
       </div>
+    </div>
 
 
     <img src='./assets/curveBottom.svg' class='curveBottom'>
@@ -278,91 +290,93 @@
         </div>
       </div>
 
-        <div class="cta-grid">
-          <div class="cta-box">Needs Assessment</div>
-          <div class="cta-box">Treatment Planning & Placement</div>
-          <div class="cta-box">Transportation & Logistics</div>
-          <div class="cta-box active">
-            <span style="display: flex; align-items: center; gap: 10px;justify-content: center;">Insurance Advocacy <img
+      <div class="cta-grid">
+        <div class="cta-box">Needs Assessment</div>
+        <div class="cta-box">Treatment Planning & Placement</div>
+        <div class="cta-box">Transportation & Logistics</div>
+        <div class="cta-box active">
+          <span style="display: flex; align-items: center; gap: 10px;justify-content: center;">Insurance Advocacy <img
               src='./assets/info.svg'></span>
-            <div class="tooltip">
-              We're experienced in our individual crafts and understand how each
-              one of our roles impacts your plan holistically.
-              <div class="tooltip-arrow"></div>
-            </div>
+          <div class="tooltip">
+            We're experienced in our individual crafts and understand how each
+            one of our roles impacts your plan holistically.
+            <div class="tooltip-arrow"></div>
           </div>
-          <div class="cta-box">Employment Advocacy</div>
-          <div class="cta-box">Aftercare Planning</div>
+        </div>
+        <div class="cta-box">Employment Advocacy</div>
+        <div class="cta-box">Aftercare Planning</div>
+      </div>
+    </div>
+  </div>
+  <section class="watch-video-section">
+    <div class="">
+      <!-- Left & Right Section -->
+      <div class="watch-video">
+        <div class="left-section">
+          <h1>
+            <span class="white-stroke-text">WATCH</span> THE VIDEO</span>
+          </h1>
+          <ul>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Needs Assessment</h2>
+                <p>
+                  The Advocacy Evaluation Toolkit contains the instruments
+                  used to collect data for evaluating the Consumer Voices for
+                  Coverage program.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Insurance Advocacy</h2>
+                <p>
+                  We are committed to advocating for appropriate coverage and
+                  payment policies.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Treatment Planning & Placement</h2>
+                <p>
+                  Patients can better understand medical procedures, discharge
+                  instruction, etc.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <div class="play-button" id="playButton"></div>
+          <div class="intervention-text">
+            <img src="./assets/logo.png" alt="Logo" class="logo" />
+          </div>
         </div>
       </div>
     </div>
-    <section class="watch-video-section">
-      <div class="">
-        <!-- Left & Right Section -->
-        <div class="watch-video">
-          <div class="left-section">
-            <h1>WATCH THE VIDEO</h1>
-            <ul>
-              <li>
-                <span>✔</span>
-                <div>
-                  <h2>Needs Assessment</h2>
-                  <p>
-                    The Advocacy Evaluation Toolkit contains the instruments
-                    used to collect data for evaluating the Consumer Voices for
-                    Coverage program.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span>✔</span>
-                <div>
-                  <h2>Insurance Advocacy</h2>
-                  <p>
-                    We are committed to advocating for appropriate coverage and
-                    payment policies.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span>✔</span>
-                <div>
-                  <h2>Treatment Planning & Placement</h2>
-                  <p>
-                    Patients can better understand medical procedures, discharge
-                    instruction, etc.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="right-section">
-            <div class="play-button" id="playButton"></div>
-            <div class="intervention-text">
-              <img src="./assets/logo.png" alt="Logo" class="logo" />
-            </div>
-          </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-left">
+          ©2021 Get an Intervention Inc. All rights reserved.
+        </div>
+        <div class="footer-right">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+
+          <a href="#">Terms of Use</a>
+          <span>|</span>
+
+          <a href="#">Site Map</a>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="footer-left">
-            ©2021 Get an Intervention Inc. All rights reserved.
-          </div>
-          <div class="footer-right">
-            <a href="#">Privacy Policy</a>
-            <span>|</span>
-
-            <a href="#">Terms of Use</a>
-            <span>|</span>
-
-            <a href="#">Site Map</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
   <!-- Popup -->
   <div class="popup" id="videoPopup">
