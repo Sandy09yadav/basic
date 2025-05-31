@@ -328,6 +328,10 @@ button:hover {
     background-size: 1rem;
 }
 
+.floating-input select option {
+    color: #000;
+}
+
 
 /* Tooltip-like error box */
 .error-tooltip-arrow {
