@@ -138,3 +138,196 @@
     display: none;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+  }
+
+  .testimonial-content {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .older-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+  .older-div img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .heading .description {
+        flex-direction: column;
+
+    }
+
+    .inner-description {
+        width: 100%;
+    }
+
+    .inner-orgination-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .inner-orgination-text {
+        flex-direction: column;
+    }
+
+  .inner-paradiv {
+    width: 100%;
+  }
+}
+
+
+/* Optional smooth transition on resize */
+@media (max-width: 768px) {
+  .curve-img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .heading h2 {
+    font-size: 20px;
+  }
+
+  .cta-box {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .watch-video {
+    margin-top: 1rem;
+    background: url("./assets/curveBGMobile.png");
+    background-position: center;
+    padding: 0;
+  }
+
+  .left-section li h2 {
+    font-size: 18px !important;
+  }
+
+  .left-section li p {
+    font-size: 14px !important;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .watch-video {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    flex: 1 1 100%;
+    padding: 30px;
+  }
+
+  .left-section h1 {
+    font-size: 32px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .footer-right {
+    /* flex-direction: column; */
+    gap: 8px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+  /* Show hamburger, hide desktop nav on mobile */
+  .hamburger-btn {
+    display: block;
+  }
+
+  .nav-links,
+  .cta {
+    display: none;
+  }
+
+  .text-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+
+
+  .form-section {
+    width: 100%;
+  }
+
+  .form-section h2 {
+    text-align: center;
+  }
+
+  .form-section input {
+    width: 100%;
+  }
+
+  .form-section button {
+    width: 100%;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .older-div {
+    display: none;
+  }
+
+  .content-grid h2 {
+    font-size: 24px;
+  }
+}
