@@ -950,7 +950,15 @@ button:hover {
         margin-top: 1rem;
         background: url('./assets/curveBGMobile.png');
         background-position: center;
+        padding: 0;
+    }
 
+    .left-section li h2 {
+        font-size: 18px !important;
+    }
+
+    .left-section li p {
+        font-size: 14px !important;
     }
 }
 
