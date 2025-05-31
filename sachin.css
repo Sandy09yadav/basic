@@ -1,0 +1,79 @@
+.navbar-inner-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.navbar-inner-div .navbar-separate{
+    width: 1px;
+    height: 13px;
+    background-color: #ffffff;
+    margin: 0 1rem;
+}
+
+
+
+
+/* Mobile: 0px to 767px */
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+   .hero-content{
+    flex-direction: column;
+  }
+    .navbar-inner-div .navbar-separate{
+    display: none;
+  }
+  .logo{
+    width: 100%;
+    max-width: 226px;
+  }
+    .text-section{
+          max-width: 100%;
+    text-align: center;
+  }
+    .form-section{
+    width:100%;
+    max-width: 500px;
+   margin-top:13px;
+     padding: 1rem;
+  }
+  .hero-section .container {
+        background: linear-gradient(to top, #1B4835 30px, transparent 111px);
+  }
+}
+
+/* Tablet: 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+  .hero-content{
+    flex-direction: column;
+  }
+  .navbar-inner-div .navbar-separate{
+    display: none;
+  }
+  .navbar-inner-div{
+    flex-direction: column;
+    align-items: self-end;
+  }
+    .logo{
+    width: 100%;
+    max-width: 226px;
+  }
+  .text-section{
+    max-width: 80%;
+    text-align: center;
+  }
+  .form-section{
+    width:55%;
+   margin-top:5px;
+  }
+}
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) {
+  /* Styles for desktops and larger screens */
+    .logo{
+    width: 100%;
+    max-width: 226px;
+  }
+}
