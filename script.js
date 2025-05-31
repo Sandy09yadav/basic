@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         if (isValid) {
-            alert('Form submitted successfully!');
+            window.location.href = 'thankyou.html';
         }
     });
 });

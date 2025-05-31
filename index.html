@@ -76,9 +76,43 @@
                 </div>
               </div>
               <div class="floating-input full">
-                <select>
-                  <option value="">Country</option>
+                <select id="country" required>
+                  <option value="" disabled selected hidden>Country</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Australia">Australia</option>
+                  <option value="India">India</option>
+                  <option value="Germany">Germany</option>
+                  <option value="France">France</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Russia">Russia</option>
+                  <option value="China">China</option>
+                  <option value="Japan">Japan</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Turkey">Turkey</option>
                 </select>
+                <label for="country">Country</label>
+                <div class="error-tooltip">
+                  This field can’t be empty.<br />Please fill it in.
+                  <div class="error-tooltip-arrow"></div>
+                </div>
               </div>
               <button type="submit" class="primary-cta">Submit</button>
             </form>
@@ -196,7 +230,7 @@
             <strong>CAN ORGANIZE EVERYTHING</strong>
           </h2>
           <div class="description">
-            <div style="width: 33%;">
+            <div style="width: 33%">
               <p>
                 <strong><em>Interventions</em></strong>
                 <em
@@ -205,7 +239,10 @@
                 >
               </p>
             </div>
-            <div class="inner-orgination-text" style="display: flex; align-items: center; width: 67%;">
+            <div
+              class="inner-orgination-text"
+              style="display: flex; align-items: center; width: 67%"
+            >
               <div class="inner-paradiv">
                 <p>
                   Loneliness and social isolation are growing public health
