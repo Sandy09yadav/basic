@@ -333,6 +333,7 @@ button:hover {
   transform: translate(15%, -50%);
   font-size: 0.75rem;
   color: #4bd0c4;
+  background: #2c7464;
 }
 
 .floating-input {
@@ -360,6 +361,8 @@ button:hover {
   transform: translate(25%, -50%);
   font-size: 0.75rem;
   color: #4bd0c4;
+  background: #2c7464;
+
 }
 
 /* Fix white arrow issue (optional: style with custom arrow) */
