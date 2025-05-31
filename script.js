@@ -21,8 +21,42 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         if (isValid) {
-            alert('Form submitted successfully!');
+            window.location.href = 'thankyou.html';
         }
+    });
+
+    // Hamburger menu functionality
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const closeDrawer = document.getElementById('closeDrawer');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+
+    function openDrawer() {
+        mobileDrawer.style.display = 'block';
+        document.body.classList.add('drawer-open');
+        // Add active class after a small delay for animation
+        setTimeout(() => {
+            mobileDrawer.classList.add('active');
+        }, 10);
+    }
+
+    function closeDrawerFunc() {
+        mobileDrawer.classList.remove('active');
+        document.body.classList.remove('drawer-open');
+        // Hide after animation completes
+        setTimeout(() => {
+            mobileDrawer.style.display = 'none';
+        }, 300);
+    }
+
+    hamburgerBtn.addEventListener('click', openDrawer);
+    closeDrawer.addEventListener('click', closeDrawerFunc);
+    drawerOverlay.addEventListener('click', closeDrawerFunc);
+
+    // Close drawer when clicking on nav links
+    const drawerNavLinks = document.querySelectorAll('.drawer-nav a');
+    drawerNavLinks.forEach(link => {
+        link.addEventListener('click', closeDrawerFunc);
     });
 });
 

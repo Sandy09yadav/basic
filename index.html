@@ -15,6 +15,13 @@
     <div class="container">
       <nav class="navbar">
         <img src="./assets/logo.png" alt="Logo" class="logo" />
+        
+        <!-- Mobile hamburger button -->
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <img src="./assets/hamburger.svg" alt="Menu" />
+        </button>
+        
+        <!-- Desktop navigation -->
         <ul class="nav-links">
           <li><a href="#" class="selected-nav">HOME</a></li>
           <li><a href="#">ABOUT</a></li>
@@ -24,8 +31,28 @@
           <span>CALL NOW FOR A CONSULT</span>
           <a href="tel:1234567890">123.456.7890</a>
         </div>
+        
+        <!-- Mobile drawer menu -->
+        <div class="mobile-drawer" id="mobileDrawer">
+          <div class="drawer-overlay" id="drawerOverlay"></div>
+          <div class="drawer-content">
+            <div class="drawer-header">
+              <img src="./assets/logo.png" alt="Logo" class="drawer-logo" />
+              <button class="close-drawer" id="closeDrawer">&times;</button>
+            </div>
+            <ul class="drawer-nav">
+              <li><a href="#" class="selected-nav">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="drawer-cta">
+              <span>CALL NOW FOR A CONSULT</span>
+              <a href="tel:1234567890">123.456.7890</a>
+            </div>
+          </div>
+        </div>
       </nav>
-
+      
       <div class="hero-content">
         <div class="text-section">
           <h1><span class="white-stroke-text">GET AN</span> <strong>INTERVENTION</strong></h1>
@@ -38,55 +65,89 @@
           </p>
         </div>
 
-        <div class="form-section">
-          <form id="myForm" novalidate>
-            <h2>Contact Us</h2>
-            <div class="input-row">
-              <div class="floating-input">
-                <input type="text" id="firstName" placeholder=" " required />
-                <label for="firstName">First Name</label>
+          <div class="form-section">
+            <form id="myForm" novalidate>
+              <h2>Contact Us</h2>
+              <div class="input-row">
+                <div class="floating-input">
+                  <input type="text" id="firstName" placeholder=" " required />
+                  <label for="firstName">First Name</label>
+                  <div class="error-tooltip">
+                    This field can't be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
+                  </div>
+                </div>
+                <div class="floating-input">
+                  <input type="text" id="lastName" placeholder=" " required />
+                  <label for="lastName">Last Name</label>
+                  <div class="error-tooltip">
+                    This field can't be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-row">
+                <div class="floating-input">
+                  <input type="text" id="email" placeholder=" " required />
+                  <label for="email">Business Email</label>
+                  <div class="error-tooltip">
+                    This field can't be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
+                  </div>
+                </div>
+                <div class="floating-input">
+                  <input type="text" id="company" placeholder=" " required />
+                  <label for="company">Company</label>
+                  <div class="error-tooltip">
+                    This field can't be empty.<br />Please fill it in.
+                    <div class="error-tooltip-arrow"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-input full">
+                <select id="country" required>
+                  <option value="" disabled selected hidden>Country</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Australia">Australia</option>
+                  <option value="India">India</option>
+                  <option value="Germany">Germany</option>
+                  <option value="France">France</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Russia">Russia</option>
+                  <option value="China">China</option>
+                  <option value="Japan">Japan</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Turkey">Turkey</option>
+                </select>
+                <label for="country">Country</label>
                 <div class="error-tooltip">
-                  This field can’t be empty.<br />Please fill it in.
+                  This field can't be empty.<br />Please fill it in.
                   <div class="error-tooltip-arrow"></div>
                 </div>
               </div>
-              <div class="floating-input">
-                <input type="text" id="lastName" placeholder=" " required />
-                <label for="lastName">Last Name</label>
-                <div class="error-tooltip">
-                  This field can’t be empty.<br />Please fill it in.
-                  <div class="error-tooltip-arrow"></div>
-                </div>
-              </div>
-            </div>
-            <div class="input-row">
-              <div class="floating-input">
-                <input type="text" id="email" placeholder=" " required />
-                <label for="email">Business Email</label>
-                <div class="error-tooltip">
-                  This field can’t be empty.<br />Please fill it in.
-                  <div class="error-tooltip-arrow"></div>
-                </div>
-              </div>
-              <div class="floating-input">
-                <input type="text" id="company" placeholder=" " required />
-                <label for="company">Company</label>
-                <div class="error-tooltip">
-                  This field can’t be empty.<br />Please fill it in.
-                  <div class="error-tooltip-arrow"></div>
-                </div>
-              </div>
-            </div>
-            <div class="floating-input full">
-              <select>
-                <option value="">Country</option>
-              </select>
-            </div>
-            <button type="submit" class="primary-cta">Submit</button>
-          </form>
+              <button type="submit" class="primary-cta">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
 
 
     <img src='./assets/curveBottom.svg' class='curveBottom'>
@@ -143,7 +204,7 @@
             <div class="testimonial-content">
               <div class="testimonial-name">Abbie Harvey</div>
               <p>
-                I’ve been caring for my mom for about 10 years, and I know the
+                I've been caring for my mom for about 10 years, and I know the
                 importance of someone being there for appointments. Older
                 people need attention, love, and care that they truly deserve.
               </p>
@@ -169,9 +230,9 @@
             <div class="testimonial-content">
               <div class="testimonial-name">Sophia Turner</div>
               <p>
-                I didn’t know how much help I needed until I found this team.
-                They’ve helped me navigate everything from doctor visits to
-                home care. Couldn’t have done it without them!
+                I didn't know how much help I needed until I found this team.
+                They've helped me navigate everything from doctor visits to
+                home care. Couldn't have done it without them!
               </p>
             </div>
           </div>
@@ -203,7 +264,7 @@
             isolation among older adults.
           </p>
           <p>
-            The methodology framework proposed by Arksey and O’Malley and
+            The methodology framework proposed by Arksey and O'Malley and
             further developed by Levac, et al. was used to guide the scoping
             review process. A total of 33 reviews met the inclusion criteria,
             evaluating a range of interventions targeted at older people
@@ -220,7 +281,7 @@
             <span style="display: flex; align-items: center; gap: 10px;justify-content: center;">Insurance Advocacy <img
               src='./assets/info.svg'></span>
             <div class="tooltip">
-              We’re experienced in our individual crafts and understand how each
+              We're experienced in our individual crafts and understand how each
               one of our roles impacts your plan holistically.
               <div class="tooltip-arrow"></div>
             </div>
