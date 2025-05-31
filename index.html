@@ -1,283 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Get professional intervention services for older adults. We provide comprehensive care and support."
-    />
-    <meta
-      name="keywords"
-      content="intervention, elderly care, senior support, healthcare"
-    />
-    <meta name="author" content="Get an Intervention Inc." />
-    <meta
-      property="og:title"
-      content="Get an Intervention - Professional Elderly Care Services"
-    />
-    <meta
-      property="og:description"
-      content="Professional intervention services for older adults. Comprehensive care and support."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://getanintervention.com" />
-    <meta property="og:image" content="./assets/logo.png" />
-    <title>Get an Intervention - Professional Elderly Care Services</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-    <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get professional intervention services for older adults. We provide comprehensive care and support." />
+  <meta name="keywords" content="intervention, elderly care, senior support, healthcare" />
+  <meta name="author" content="Get an Intervention Inc." />
+  <meta property="og:title" content="Get an Intervention - Professional Elderly Care Services" />
+  <meta property="og:description" content="Professional intervention services for older adults. Comprehensive care and support." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getanintervention.com" />
+  <meta property="og:image" content="./assets/logo.png" />
+  <title>Get an Intervention - Professional Elderly Care Services</title>
+  <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sachin.css" />
+  <script src="script.js" defer></script>
+  <!-- Preload critical assets -->
+  <link rel="preload" href="./assets/background.png" as="image" />
+  <link rel="preload" href="./assets/logo.png" as="image" />
+  <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Preload critical assets -->
-    <link rel="preload" href="./assets/background.png" as="image" />
-    <link rel="preload" href="./assets/logo.png" as="image" />
-  </head>
+</head>
 
-  <body>
-    <header class="hero-section">
-      <div class="overlay"></div>
-      <div class="container">
-        <nav class="navbar">
-          <img src="./assets/logo.png" alt="Logo" class="logo" />
+<body>
+  <header class="hero-section ">
+    <div class="overlay"></div>
+    <div class="container">
+      <nav class="navbar">
+        <img src="./assets/logo.png" alt="Logo" class="logo" />
 
-          <!-- Mobile hamburger button -->
-          <button class="hamburger-btn" id="hamburgerBtn">
-            <img src="./assets/hamburger.svg" alt="Menu" />
-          </button>
+     
+        <div class="navbar-inner-div">        <!-- Desktop navigation -->
+             <!-- Mobile hamburger button -->
+        <button class="hamburger-btn" id="hamburgerBtn">
+          <img src="./assets/hamburger.svg" alt="Menu" />
+        </button>
+        <ul class="nav-links">
+          <li><a href="#" class="selected-nav">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="navbar-separate ">
 
-          <!-- Desktop navigation -->
-          <ul class="nav-links">
-            <li><a href="#" class="selected-nav">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-          <div class="cta">
-            <span>CALL NOW FOR A CONSULT</span>
-            <a href="tel:1234567890">123.456.7890</a>
-          </div>
 
-          <!-- Mobile drawer menu -->
-          <div class="mobile-drawer" id="mobileDrawer">
-            <div class="drawer-overlay" id="drawerOverlay"></div>
-            <div class="drawer-content">
-              <div class="drawer-header">
-                <img src="./assets/logo.png" alt="Logo" class="drawer-logo" />
-                <button class="close-drawer" id="closeDrawer">&times;</button>
-              </div>
-              <ul class="drawer-nav">
-                <li><a href="#" class="selected-nav">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
-              <div class="drawer-cta">
-                <span>CALL NOW FOR A CONSULT</span>
-                <a href="tel:1234567890">123.456.7890</a>
-              </div>
+        </div>
+        <div class="cta">
+          <span>CALL NOW FOR A CONSULT</span>
+          <a href="tel:1234567890">123.456.7890</a>
+        </div>
+         </div>
+
+        <!-- Mobile drawer menu -->
+        <div class="mobile-drawer" id="mobileDrawer">
+          <div class="drawer-overlay" id="drawerOverlay"></div>
+          <div class="drawer-content">
+            <div class="drawer-header">
+              <img src="./assets/logo.png" alt="Logo" class="drawer-logo" />
+              <button class="close-drawer" id="closeDrawer">&times;</button>
+            </div>
+            <ul class="drawer-nav">
+              <li><a href="#" class="selected-nav">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="drawer-cta">
+              <span>CALL NOW FOR A CONSULT</span>
+              <a href="tel:1234567890">123.456.7890</a>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-        <div class="hero-content">
-          <div class="text-section">
-            <h1>
-              <span class="white-stroke-text">GET AN</span>
-              <strong>INTERVENTION</strong>
-            </h1>
-            <p>
-              Showing greater respect to older adults can be done in several
-              ways: acknowledging and putting to use the talents and skills of
-              older adults, creating intergenerational initiatives, and allowing
-              older adults to stay active and independent for as long as
-              possible.
-            </p>
-          </div>
+      <div class="hero-content">
+        <div class="text-section">
+          <h1><span class="white-stroke-text">GET AN</span> <strong>INTERVENTION</strong></h1>
+          <p>
+            Showing greater respect to older adults can be done in several
+            ways: acknowledging and putting to use the talents and skills of
+            older adults, creating intergenerational initiatives, and allowing
+            older adults to stay active and independent for as long as
+            possible.
+          </p>
+        </div>
 
-          <div class="form-section">
-            <form id="myForm" novalidate>
-              <h2>Contact Us</h2>
-              <div class="input-row">
-                <div class="floating-input">
-                  <input type="text" id="firstName" placeholder=" " required />
-                  <label for="firstName">First Name</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-                <div class="floating-input">
-                  <input type="text" id="lastName" placeholder=" " required />
-                  <label for="lastName">Last Name</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="input-row">
-                <div class="floating-input">
-                  <input type="text" id="email" placeholder=" " required />
-                  <label for="email">Business Email</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-                <div class="floating-input">
-                  <input type="text" id="company" placeholder=" " required />
-                  <label for="company">Company</label>
-                  <div class="error-tooltip">
-                    This field can't be empty.<br />Please fill it in.
-                    <div class="error-tooltip-arrow"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="floating-input full">
-                <select id="country" required>
-                  <option value="" disabled selected hidden>Country</option>
-                  <option value="United States">United States</option>
-                  <option value="Canada">Canada</option>
-                  <option value="United Kingdom">United Kingdom</option>
-                  <option value="Australia">Australia</option>
-                  <option value="India">India</option>
-                  <option value="Germany">Germany</option>
-                  <option value="France">France</option>
-                  <option value="Italy">Italy</option>
-                  <option value="Spain">Spain</option>
-                  <option value="Brazil">Brazil</option>
-                  <option value="Mexico">Mexico</option>
-                  <option value="Russia">Russia</option>
-                  <option value="China">China</option>
-                  <option value="Japan">Japan</option>
-                  <option value="South Korea">South Korea</option>
-                  <option value="Netherlands">Netherlands</option>
-                  <option value="Sweden">Sweden</option>
-                  <option value="Norway">Norway</option>
-                  <option value="Switzerland">Switzerland</option>
-                  <option value="South Africa">South Africa</option>
-                  <option value="New Zealand">New Zealand</option>
-                  <option value="Singapore">Singapore</option>
-                  <option value="Malaysia">Malaysia</option>
-                  <option value="Indonesia">Indonesia</option>
-                  <option value="Thailand">Thailand</option>
-                  <option value="Philippines">Philippines</option>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Chile">Chile</option>
-                  <option value="Turkey">Turkey</option>
-                </select>
-                <label for="country">Country</label>
+        <div class="form-section">
+          <form id="myForm" novalidate>
+            <h2>Contact Us</h2>
+            <div class="input-row">
+              <div class="floating-input">
+                <input type="text" id="firstName" placeholder=" " required />
+                <label for="firstName">First Name</label>
                 <div class="error-tooltip">
                   This field can't be empty.<br />Please fill it in.
                   <div class="error-tooltip-arrow"></div>
                 </div>
               </div>
-              <button type="submit" class="primary-cta">Submit</button>
-            </form>
-          </div>
+              <div class="floating-input">
+                <input type="text" id="lastName" placeholder=" " required />
+                <label for="lastName">Last Name</label>
+                <div class="error-tooltip">
+                  This field can't be empty.<br />Please fill it in.
+                  <div class="error-tooltip-arrow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="floating-input">
+                <input type="text" id="email" placeholder=" " required />
+                <label for="email">Business Email</label>
+                <div class="error-tooltip">
+                  This field can't be empty.<br />Please fill it in.
+                  <div class="error-tooltip-arrow"></div>
+                </div>
+              </div>
+              <div class="floating-input">
+                <input type="text" id="company" placeholder=" " required />
+                <label for="company">Company</label>
+                <div class="error-tooltip">
+                  This field can't be empty.<br />Please fill it in.
+                  <div class="error-tooltip-arrow"></div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-input full">
+              <select id="country" required>
+                <option value=""  selected hidden></option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="India">India</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Russia">Russia</option>
+                <option value="China">China</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="South Africa">South Africa</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Turkey">Turkey</option>
+              </select>
+              <label for="country">Country</label>
+              <div class="error-tooltip">
+                This field can't be empty.<br />Please fill it in.
+                <div class="error-tooltip-arrow"></div>
+              </div>
+            </div>
+            <button type="submit" class="primary-cta">Submit</button>
+          </form>
         </div>
       </div>
+    </div>
 
-      <img src="./assets/curveBottom.svg" class="curveBottom" />
-    </header>
-    <section class="testimonial-section">
-      <div class="container">
-        <div class="older-div">
-          <img src="./assets/older-img1.png" />
-          <img src="./assets/older-img2.png" />
-          <img src="./assets/older-img3.png" />
-        </div>
-        <div class="content-grid">
-          <h2 class="outlined-heading">
-            <span class="black-stroke-text">WE</span>
-            <strong>UNDERSTAND</strong>
-          </h2>
+
+    <img src='./assets/curveBottom.svg' class='curveBottom'>
+
+  </header>
+  <section class="testimonial-section">
+    <div class="container">
+      <div class="older-div">
+        <img src="./assets/older-img1.png" />
+        <img src="./assets/older-img2.png" />
+        <img src="./assets/older-img3.png" />
+      </div>
+      <div class="content-grid">
+        <h2 class="outlined-heading">
+          <span class="black-stroke-text">WE</span> <strong>UNDERSTAND</strong>
+        </h2>
+        <p>
+          Older adults want to play active and meaningful roles in their
+          lives, including as part of a social network, a neighborhood, and a
+          community. Service providers and policymakers must consider that a
+          lack of sense of purpose can become problematic as people age.
+          Engaging them in leisure activities and volunteer work is important.
+        </p>
+        <p>
+          Older adults want to stay active and contribute to society in a
+          reciprocal manner (meaning that they want to exchange their services
+          and skills with others for the mutual benefit of the neighborhood or
+          community). Qualitative and quantitative studies published from 2005
+          to 2016 examining the social needs of older adults were eligible for
+          inclusion.
+        </p>
+        <div class="">
           <p>
-            Older adults want to play active and meaningful roles in their
-            lives, including as part of a social network, a neighborhood, and a
-            community. Service providers and policymakers must consider that a
-            lack of sense of purpose can become problematic as people age.
-            Engaging them in leisure activities and volunteer work is important.
+            To stimulate social contacts, neighborhood initiatives can be
+            developed. Social meeting places, such as pubs and churches can
+            help to foster the development of close and peripheral
+            relationships.
           </p>
-          <p>
-            Older adults want to stay active and contribute to society in a
-            reciprocal manner (meaning that they want to exchange their services
-            and skills with others for the mutual benefit of the neighborhood or
-            community). Qualitative and quantitative studies published from 2005
-            to 2016 examining the social needs of older adults were eligible for
-            inclusion.
-          </p>
-          <div class="">
-            <p>
-              To stimulate social contacts, neighborhood initiatives can be
-              developed. Social meeting places, such as pubs and churches can
-              help to foster the development of close and peripheral
-              relationships.
-            </p>
-            <a href="#" class="secondary-cta">92% Success Rate →</a>
-          </div>
+          <a href="#" class="secondary-cta">92% Success Rate →</a>
         </div>
       </div>
-    </section>
-    <div class="we-organize">
-      <div class="container">
-        <div class="testimonial-slider">
-          <div class="arrow-left arrows">&#10094;</div>
-          <div class="arrow-right arrows">&#10095;</div>
+    </div>
+  </section>
+  <div class="we-organize">
+    <div class="container">
+      <div class="testimonial-slider">
+        <div class="arrow-left arrows">&#10094;</div>
+        <div class="arrow-right arrows">&#10095;</div>
 
-          <div class="testimonial-wrapper">
-            <!-- Testimonial 1 -->
-            <div class="testimonial">
-              <img src="./assets/image1.png" alt="Person 1" />
-              <div class="testimonial-content">
-                <div class="testimonial-name">Abbie Harvey</div>
-                <p>
-                  I've been caring for my mom for about 10 years, and I know the
-                  importance of someone being there for appointments. Older
-                  people need attention, love, and care that they truly deserve.
-                </p>
-              </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="testimonial">
-              <img src="./assets/image2.png" alt="Person 2" />
-              <div class="testimonial-content">
-                <div class="testimonial-name">David Wilson</div>
-                <p>
-                  This team made it easier to manage my father's health and
-                  appointments while I was working full-time. I truly appreciate
-                  how supportive and professional they were throughout.
-                </p>
-              </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="testimonial">
-              <img src="./assets/image3.png" alt="Person 3" />
-              <div class="testimonial-content">
-                <div class="testimonial-name">Sophia Turner</div>
-                <p>
-                  I didn't know how much help I needed until I found this team.
-                  They've helped me navigate everything from doctor visits to
-                  home care. Couldn't have done it without them!
-                </p>
-              </div>
+        <div class="testimonial-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="testimonial">
+            <img src="./assets/image1.png" alt="Person 1" />
+            <div class="testimonial-content">
+              <div class="testimonial-name">Abbie Harvey</div>
+              <p>
+                I've been caring for my mom for about 10 years, and I know the
+                importance of someone being there for appointments. Older
+                people need attention, love, and care that they truly deserve.
+              </p>
             </div>
           </div>
 
-          <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+          <!-- Testimonial 2 -->
+          <div class="testimonial">
+            <img src="./assets/image2.png" alt="Person 2" />
+            <div class="testimonial-content">
+              <div class="testimonial-name">David Wilson</div>
+              <p>
+                This team made it easier to manage my father's health and
+                appointments while I was working full-time. I truly appreciate
+                how supportive and professional they were throughout.
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial">
+            <img src="./assets/image3.png" alt="Person 3" />
+            <div class="testimonial-content">
+              <div class="testimonial-name">Sophia Turner</div>
+              <p>
+                I didn't know how much help I needed until I found this team.
+                They've helped me navigate everything from doctor visits to
+                home care. Couldn't have done it without them!
+              </p>
+            </div>
           </div>
         </div>
-        <div class="heading">
-          <h2>
-            <span class="black-stroke-text">WE</span>
-            <strong>CAN ORGANIZE EVERYTHING</strong>
-          </h2>
-          <div class="description">
+
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="heading">
+        <h2>
+          <span class="black-stroke-text">WE</span>
+          <strong>CAN ORGANIZE EVERYTHING</strong>
+        </h2>
+     <div class="description">
             <div class="inner-description">
               <p>
                 <strong><em>Interventions</em></strong>
@@ -309,117 +302,107 @@
                 </p>
               </div>
             </div>
+        </div>
+      </div>
+
+      <div class="cta-grid">
+        <div class="cta-box">Needs Assessment</div>
+        <div class="cta-box">Treatment Planning & Placement</div>
+        <div class="cta-box">Transportation & Logistics</div>
+        <div class="cta-box active">
+          <span style="display: flex; align-items: center; gap: 10px;justify-content: center;">Insurance Advocacy <img
+              src='./assets/info.svg'></span>
+          <div class="tooltip">
+            We're experienced in our individual crafts and understand how each
+            one of our roles impacts your plan holistically.
+            <div class="tooltip-arrow"></div>
           </div>
         </div>
-
-        <div class="cta-grid">
-          <div class="cta-box">Needs Assessment</div>
-          <div class="cta-box">Treatment Planning & Placement</div>
-          <div class="cta-box">Transportation & Logistics</div>
-          <div class="cta-box active">
-            <span
-              style="
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                justify-content: center;
-              "
-              >Insurance Advocacy <img src="./assets/info.svg"
-            /></span>
-            <div class="tooltip">
-              We're experienced in our individual crafts and understand how each
-              one of our roles impacts your plan holistically.
-              <div class="tooltip-arrow"></div>
-            </div>
+        <div class="cta-box">Employment Advocacy</div>
+        <div class="cta-box">Aftercare Planning</div>
+      </div>
+    </div>
+  </div>
+  <section class="watch-video-section">
+    <div class="">
+      <!-- Left & Right Section -->
+      <div class="watch-video">
+        <div class="left-section">
+          <h1>
+            <span class="white-stroke-text">WATCH</span> THE VIDEO</span>
+          </h1>
+          <ul>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Needs Assessment</h2>
+                <p>
+                  The Advocacy Evaluation Toolkit contains the instruments
+                  used to collect data for evaluating the Consumer Voices for
+                  Coverage program.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Insurance Advocacy</h2>
+                <p>
+                  We are committed to advocating for appropriate coverage and
+                  payment policies.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>✔</span>
+              <div>
+                <h2>Treatment Planning & Placement</h2>
+                <p>
+                  Patients can better understand medical procedures, discharge
+                  instruction, etc.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <div class="play-button" id="playButton"></div>
+          <div class="intervention-text">
+            <img src="./assets/logo.png" alt="Logo" class="logo" />
           </div>
-          <div class="cta-box">Employment Advocacy</div>
-          <div class="cta-box">Aftercare Planning</div>
         </div>
       </div>
     </div>
-    <section class="watch-video-section">
-      <div class="">
-        <!-- Left & Right Section -->
-        <div class="watch-video">
-          <div class="left-section">
-            <h1>
-              <span class="white-stroke-text">WATCH</span>
-              <span>THE VIDEO</span>
-            </h1>
-            <ul>
-              <li>
-                <span>✔</span>
-                <div>
-                  <h2>Needs Assessment</h2>
-                  <p>
-                    The Advocacy Evaluation Toolkit contains the instruments
-                    used to collect data for evaluating the Consumer Voices for
-                    Coverage program.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span>✔</span>
-                <div>
-                  <h2>Insurance Advocacy</h2>
-                  <p>
-                    We are committed to advocating for appropriate coverage and
-                    payment policies.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <span>✔</span>
-                <div>
-                  <h2>Treatment Planning & Placement</h2>
-                  <p>
-                    Patients can better understand medical procedures, discharge
-                    instruction, etc.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="right-section">
-            <div class="play-button" id="playButton"></div>
-            <div class="intervention-text">
-              <img src="./assets/logo.png" alt="Logo" class="logo" />
-            </div>
-          </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-left">
+          ©2021 Get an Intervention Inc. All rights reserved.
         </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="footer">
-          <div class="footer-left">
-            ©2021 Get an Intervention Inc. All rights reserved.
-          </div>
-          <div class="footer-right">
-            <a href="#">Privacy Policy</a>
-            <span>|</span>
+        <div class="footer-right">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
 
-            <a href="#">Terms of Use</a>
-            <span>|</span>
+          <a href="#">Terms of Use</a>
+          <span>|</span>
 
-            <a href="#">Site Map</a>
-          </div>
+          <a href="#">Site Map</a>
         </div>
-      </div>
-    </footer>
-
-    <!-- Popup -->
-    <div class="popup" id="videoPopup">
-      <div class="popup-content">
-        <button class="close-button" id="closeButton">&times;</button>
-        <video controls>
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
       </div>
     </div>
-  </body>
+  </footer>
+
+  <!-- Popup -->
+  <div class="popup" id="videoPopup">
+    <div class="popup-content">
+      <button class="close-button" id="closeButton">&times;</button>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+
 </html>
