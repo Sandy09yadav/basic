@@ -653,11 +653,16 @@ button:hover {
   width: 100%;
   max-width: 221px;
   height: 56px;
-      margin: 20px auto;
+  margin: 20px auto;
   background-color: #4dc0ad;
   color: white;
   box-shadow: none;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  font-size: 18px;
 }
 
 .primary-cta:hover {
