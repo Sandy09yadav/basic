@@ -474,7 +474,7 @@ button:hover {
     z-index: 10;
 }
 
-.arrows:hover{
+.arrows:hover {
     color: #5BC8AF;
 }
 
@@ -530,6 +530,19 @@ button:hover {
     width: 370px;
     height: 180px;
     border-radius: 8px;
+}
+
+@media (max-width: 1100px) {
+    .older-div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+
+    .older-div img {
+        width: 100%;
+        height: 120px;
+        border-radius: 8px;
+    }
 }
 
 .we-understand-section {
@@ -933,14 +946,23 @@ button:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 2rem 6rem;
 }
 
 @media screen and (max-width: 768px) {
     .watch-video {
         margin-top: 1rem;
         background: url('./assets/curveBGMobile.png');
-        background-position:center;
+        background-position: center;
+        padding: 0;
+    }
 
+    .left-section li h2 {
+        font-size: 18px !important;
+    }
+
+    .left-section li p {
+        font-size: 14px !important;
     }
 }
 
@@ -994,7 +1016,7 @@ button:hover {
 
 .left-section li p {
     margin: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1014,8 +1036,10 @@ button:hover {
     top: 0;
     z-index: 1000;
 }
-option{
-    background-color: rgb(29, 76, 71);;
+
+option {
+    background-color: rgb(29, 76, 71);
+    ;
 }
 
 .play-button {
@@ -1034,7 +1058,7 @@ option{
     position: absolute;
     top: -24px;
     left: -23px;
-    background:rgb(91 200 175 / 35%);
+    background: rgb(91 200 175 / 35%);
     width: 120px;
     height: 120px;
     border: 2px solid white;
@@ -1197,7 +1221,8 @@ footer {
 .hamburger-btn img {
     width: 24px;
     height: 24px;
-    filter: brightness(0) invert(1); /* Make it white */
+    filter: brightness(0) invert(1);
+    /* Make it white */
 }
 
 /* Mobile drawer menu */
