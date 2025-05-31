@@ -1010,6 +1010,9 @@ button:hover {
     top: 0;
     z-index: 1000;
 }
+option{
+    background-color: rgb(29, 76, 71);;
+}
 
 .play-button {
     width: 80px;
