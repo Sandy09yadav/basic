@@ -9,34 +9,33 @@
     --color-text-dark: #333333;
     --color-background: #F5F5F5;
     --color-error: #ff7272;
-    
+
     /* Typography */
-    --font-family-primary: 'Helvetica Neue', sans-serif;
-    --font-family-secondary: 'Poppins', sans-serif;
+    --font-family-primary: 'Montserrat', sans-serif;
     --font-size-base: 16px;
     --font-size-small: 14px;
     --font-size-large: 18px;
     --font-size-xlarge: 24px;
     --font-size-xxlarge: 36px;
     --font-size-hero: 64px;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
-    
+
     /* Border Radius */
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
     --border-radius-lg: 10px;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.4s ease;
-    
+
     /* Z-index layers */
     --z-index-base: 1;
     --z-index-drawer: 1000;
@@ -643,7 +642,7 @@ button:hover {
 }
 
 .outlined-heading {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family-primary);
     font-size: 28px;
     font-weight: 800;
     display: flex;
@@ -679,7 +678,7 @@ button:hover {
 
 /* Buttons  */
 .btn {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family-primary);
     font-weight: 600;
     font-size: 14px;
     padding: 12px 24px;
@@ -737,12 +736,12 @@ button:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-/* alsdjlajsdlashdhas */
+/* We organise Section */
 .we-organize {
     padding: 40px 20px;
     margin: auto;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 5rem;
+    font-family: var(--font-family-primary);
+    padding-bottom: 5rem;
     background-color: #FFF;
     position: relative;
 }
@@ -775,8 +774,14 @@ button:hover {
     font-size: 14px;
 }
 
+.inner-description {
+    width: 33%;
+}
+
 .inner-orgination-text {
     display: flex;
+    gap: 20px;
+    width: 67%;
 }
 
 .inner-paradiv {
@@ -787,6 +792,14 @@ button:hover {
     .heading .description {
         flex-direction: column;
 
+    }
+
+    .inner-description {
+        width: 100%;
+    }
+
+    .inner-orgination-text {
+        width: 100%;
     }
 }
 
@@ -870,11 +883,6 @@ button:hover {
 }
 
 /* Popup Styles */
-.watch-video-section {
-    /* background: #21594f; */
-    margin-top: 3rem;
-}
-
 .watch-video {
     display: flex;
     flex-wrap: wrap;
