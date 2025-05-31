@@ -42,22 +42,30 @@ const App = {
      * @returns {boolean} Whether the form is valid
      */
     validateForm(form) {
-        let isValid = true;
         const fields = form.querySelectorAll('input[required], select[required]');
-
-        fields.forEach((field) => {
+        
+        // Remove all existing errors first
+        fields.forEach(field => {
             const container = field.closest('.floating-input');
-            if (!container) return;
-
-            if (!field.value.trim()) {
-                container.classList.add('error');
-                isValid = false;
-            } else {
+            if (container) {
                 container.classList.remove('error');
             }
         });
 
-        return isValid;
+        // Check fields in sequence and stop at first error
+        for (const field of fields) {
+            const container = field.closest('.floating-input');
+            if (!container) continue;
+
+            if (!field.value.trim()) {
+                container.classList.add('error');
+                // Focus the first empty field
+                field.focus();
+                return false;
+            }
+        }
+
+        return true;
     },
 
     /**
